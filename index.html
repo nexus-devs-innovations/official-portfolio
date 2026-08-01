@@ -578,12 +578,16 @@
         .portfolio-card .overlay {
             position: absolute;
             inset: 0;
+            width: 100%;
+            border: 0;
+            padding: 0;
             background: linear-gradient(135deg, rgba(6, 182, 212, 0.85), rgba(168, 85, 247, 0.85));
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
             transition: opacity 0.4s ease;
+            cursor: pointer;
         }
         .portfolio-card:hover .overlay {
             opacity: 1;
@@ -773,14 +777,14 @@
                     <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
                     <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
                     <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     class="ml-2 px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
                     Free Quote
                 </a>
             </div>
 
             <!-- Mobile Hamburger -->
-            <button id="menuBtn" class="md:hidden text-gray-300 text-2xl focus:outline-none">
+            <button id="menuBtn" type="button" aria-label="Open mobile menu" class="md:hidden text-gray-300 text-2xl focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
@@ -788,7 +792,7 @@
 
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-[#131620] border-l border-white/5 z-50 p-6 pt-20 md:hidden">
-        <button id="closeBtn" class="absolute top-5 right-5 text-gray-400 text-2xl">
+        <button id="closeBtn" type="button" aria-label="Close mobile menu" class="absolute top-5 right-5 text-gray-400 text-2xl">
             <i class="fas fa-times"></i>
         </button>
         <div class="flex flex-col gap-4 text-gray-300 font-medium">
@@ -799,7 +803,7 @@
             <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
             <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
             <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             class="mt-2 px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm text-center">
             Free Quote
         </a>
@@ -850,7 +854,7 @@ HERO SECTION
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-300">
             <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             class="btn-cta">
             <i class="fas fa-comment"></i>Get a Free Quote
         </a>
@@ -911,7 +915,7 @@ ABOUT & QUICK STATS
             <!-- Stat 3 -->
             <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-8 text-center reveal delay-300">
                 <div class="text-4xl font-extrabold stat-number">
-                    <span class="counter" data-target="100">0</span><span class="stat-number">%</span>
+                    <span class="counter" data-target="99" data-suffix="%">0</span>
                 </div>
                 <div class="text-gray-400 font-medium mt-2">Client Satisfaction</div>
                 <p class="text-gray-500 text-sm mt-1">Every project delivered with care</p>
@@ -1218,11 +1222,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">SaaS Landing Page</h4>
                     <p class="text-gray-500 text-xs mt-1">Website</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — SaaS Landing Page')">
+                <button type="button" class="overlay" data-preview="SaaS Landing Page">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
 
             <!-- Project 2 — Videos -->
@@ -1237,11 +1241,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">Product Reel — 30s</h4>
                     <p class="text-gray-500 text-xs mt-1">Video</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Product Reel')">
+                <button type="button" class="overlay" data-preview="Product Reel">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
 
             <!-- Project 3 — Graphics -->
@@ -1256,11 +1260,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">Brand Poster Series</h4>
                     <p class="text-gray-500 text-xs mt-1">Graphic</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Brand Poster')">
+                <button type="button" class="overlay" data-preview="Brand Poster">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
 
             <!-- Project 4 — Data -->
@@ -1290,11 +1294,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">Sales Analytics Dashboard</h4>
                     <p class="text-gray-500 text-xs mt-1">Data</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Excel Dashboard')">
+                <button type="button" class="overlay" data-preview="Excel Dashboard">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
 
             <!-- Project 5 — Websites -->
@@ -1323,11 +1327,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">E-Commerce Storefront</h4>
                     <p class="text-gray-500 text-xs mt-1">Website</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — E-Commerce')">
+                <button type="button" class="overlay" data-preview="E-Commerce">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
 
             <!-- Project 6 — Videos -->
@@ -1342,11 +1346,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">YouTube Ad — 15s</h4>
                     <p class="text-gray-500 text-xs mt-1">Video</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — YouTube Ad')">
+                <button type="button" class="overlay" data-preview="YouTube Ad">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
 
             <!-- Project 7 — Graphics -->
@@ -1361,11 +1365,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">Product Catalogue</h4>
                     <p class="text-gray-500 text-xs mt-1">Graphic</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Catalogue')">
+                <button type="button" class="overlay" data-preview="Catalogue">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
 
             <!-- Project 8 — Data -->
@@ -1395,11 +1399,11 @@ PORTFOLIO SHOWCASE
                     <h4 class="text-white font-semibold">Automated PDF Reports</h4>
                     <p class="text-gray-500 text-xs mt-1">Data</p>
                 </div>
-                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — PDF Reports')">
+                <button type="button" class="overlay" data-preview="PDF Reports">
                     <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
                         <i class="fas fa-external-link-alt mr-1"></i> Live Preview
                     </span>
-                </a>
+                </button>
             </div>
         </div>
     </div>
@@ -1552,7 +1556,7 @@ CONTACT & LEAD FORM
 
                 <!-- WhatsApp CTA -->
                 <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-[#25d366]/10 border border-[#25d366]/30 text-[#25d366] font-semibold hover:bg-[#25d366]/20 transition-all mb-8">
                 <i class="fab fa-whatsapp text-xl"></i>
                 Chat directly on WhatsApp
@@ -1662,19 +1666,19 @@ FOOTER
 
             <!-- Social Links -->
             <div class="flex items-center gap-4 text-gray-500">
-                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="Instagram">
+                <a href="#" aria-label="Instagram" class="hover:text-cyan-400 transition-colors text-lg" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="YouTube">
+                <a href="#" aria-label="YouTube" class="hover:text-cyan-400 transition-colors text-lg" title="YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
-                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="LinkedIn">
+                <a href="#" aria-label="LinkedIn" class="hover:text-cyan-400 transition-colors text-lg" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="GitHub">
+                <a href="#" aria-label="GitHub" class="hover:text-cyan-400 transition-colors text-lg" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://wa.me/919999999999" target="_blank" class="hover:text-[#25d366] transition-colors text-lg" title="WhatsApp">
+                <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-[#25d366] transition-colors text-lg" title="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
@@ -1691,7 +1695,7 @@ FOOTER
 WHATSAPP FLOATING BUTTON
 ════════════════════════════════════ -->
 <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
-target="_blank"
+target="_blank" rel="noopener noreferrer"
 class="whatsapp-float"
 title="Chat on WhatsApp">
 <i class="fab fa-whatsapp"></i>
@@ -1727,6 +1731,12 @@ JAVASCRIPT
         // Close mobile menu on link click
         document.querySelectorAll('#mobileMenu a').forEach(link => {
             link.addEventListener('click', closeMenu);
+        });
+
+        document.querySelectorAll('.overlay[data-preview]').forEach(overlay => {
+            overlay.addEventListener('click', function() {
+                alert(`🔗 Live Preview — ${this.dataset.preview}`);
+            });
         });
 
         // ─── Animated Counters ───
@@ -1819,7 +1829,7 @@ JAVASCRIPT
                 whatsappMsg += `*Message:* ${encodeURIComponent(message)}`;
 
                 const waUrl = `https://wa.me/919999999999?text=${whatsappMsg}`;
-                window.open(waUrl, '_blank');
+                window.open(waUrl, '_blank', 'noopener,noreferrer');
 
                 // Reset form
                 this.reset();
@@ -1829,7 +1839,7 @@ JAVASCRIPT
 
         // ─── Book a 15-min Discovery Call ───
         const discoveryBtn = document.getElementById('discoveryBtn');
-        if (discoveryBtn) {
+        if (discoveryBtn && leadForm) {
             discoveryBtn.addEventListener('click', function() {
                 const formData = new FormData(leadForm);
                 const name = formData.get('name')?.toString().trim() || '';
@@ -1849,7 +1859,7 @@ JAVASCRIPT
                 }
 
                 const waUrl = `https://wa.me/919999999999?text=${callMsg}`;
-                window.open(waUrl, '_blank');
+                window.open(waUrl, '_blank', 'noopener,noreferrer');
 
                 alert('📞 Opening WhatsApp to book your 15-min discovery call!');
             });
@@ -1873,4 +1883,3 @@ JAVASCRIPT
 
 </body>
 </html>
-
