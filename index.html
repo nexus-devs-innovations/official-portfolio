@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nexus Devs Innovations — a specialized 7-member digital team delivering high-converting websites, video production, graphic design, and data operations. Get a free quote today." />
+    <meta name="keywords" content="web development, video production, graphic design, data operations, digital agency, landing pages, high-converting websites, Nexus Devs Innovations, free quote" />
+    <meta name="author" content="Nexus Devs Innovations" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://nexusdevs.in/" />
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nexus Devs Innovations" />
+    <meta property="og:title" content="Nexus Devs Innovations | Turn Ideas Into High-Converting Digital Products" />
+    <meta property="og:description" content="A specialized 7-member team delivering end-to-end web development, video production, graphic design, and data operations. Get a free quote today." />
+    <meta property="og:url" content="https://nexusdevs.in/" />
+    <meta property="og:image" content="https://nexusdevs.in/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nexus Devs Innovations — Digital Agency" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nexus Devs Innovations | Turn Ideas Into High-Converting Digital Products" />
+    <meta name="twitter:description" content="A specialized 7-member team delivering end-to-end web development, video production, graphic design, and data operations." />
+    <meta name="twitter:image" content="https://nexusdevs.in/og-image.jpg" />
+
+    <!-- Favicon (inline SVG) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2306b6d4'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' text-anchor='middle' fill='white'%3EN%3C/text%3E%3C/svg%3E" />
+
+    <title>Nexus Devs Innovations | Turn Ideas Into High-Converting Digital Products</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <!-- Font Awesome 6 (Free) -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts: Inter -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+    />
+
+    <style>
+        /* ─── Base Reset & Typography ─── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0d12;
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+
+        /* ─── Scrollbar ─── */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0d12;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #06b6d4, #a855f7);
+            border-radius: 10px;
+        }
+
+        /* ─── Utility Classes ─── */
+        .gradient-text {
+            background: linear-gradient(135deg, #06b6d4, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-border {
+            border: 1px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, #06b6d4, #a855f7);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        .glow-card {
+            transition: all 0.4s ease;
+        }
+        .glow-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 30px rgba(6, 182, 212, 0.15), 0 8px 30px rgba(168, 85, 247, 0.15);
+            border-color: #06b6d4;
+        }
+
+        /* ─── Primary CTA Button (High-Contrast) ─── */
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2.25rem;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+            color: #0b0d12;
+            font-weight: 800;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(249, 115, 22, 0.35);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.01em;
+        }
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #fbbf24, #f97316);
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.25), 0 10px 36px rgba(249, 115, 22, 0.55);
+        }
+        .btn-cta:active {
+            transform: translateY(0);
+        }
+
+        /* ─── Secondary CTA Button ─── */
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2.25rem;
+            border-radius: 9999px;
+            border: 1px solid #334155;
+            color: #e5e7eb;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.03);
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            border-color: #06b6d4;
+            color: #22d3ee;
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+            transform: translateY(-2px);
+        }
+
+        /* ─── Typography Hierarchy ─── */
+        h1,
+        h2,
+        h3,
+        h4 {
+            text-wrap: balance;
+            letter-spacing: -0.02em;
+        }
+        p {
+            text-wrap: pretty;
+        }
+
+        /* ─── Logo SVG ─── */
+        .logo-svg {
+            display: block;
+            filter: drop-shadow(0 2px 8px rgba(6, 182, 212, 0.35));
+        }
+
+        /* ─── Portfolio Mockup Frames ─── */
+        .mockup {
+            position: relative;
+            background: #0f1117;
+            border-bottom: 1px solid #1e293b;
+            overflow: hidden;
+        }
+        .mockup-screen {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            padding: 0;
+            gap: 0;
+        }
+        /* Browser */
+        .mockup-browser {
+            background: linear-gradient(180deg, #1e293b, #0f172a);
+        }
+        .mockup-browser-bar {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 10px;
+            background: #0f172a;
+        }
+        .mockup-dot { width: 9px; height: 9px; border-radius: 50%; }
+        .mockup-dot.red { background: #f87171; }
+        .mockup-dot.yellow { background: #fbbf24; }
+        .mockup-dot.green { background: #34d399; }
+        .mockup-url {
+            flex: 1;
+            height: 10px;
+            background: #1e293b;
+            border-radius: 999px;
+            margin-left: 8px;
+        }
+        .mockup-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px 0;
+        }
+        .mockup-logo { width: 26px; height: 13px; border-radius: 3px; background: linear-gradient(90deg, #06b6d4, #a855f7); }
+        .mockup-nav-link { width: 26px; height: 6px; background: #334155; border-radius: 999px; }
+        .mockup-nav-link.cta { background: linear-gradient(90deg, #f59e0b, #f97316); width: 42px; }
+        .mockup-hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            text-align: center;
+            padding: 10px;
+        }
+        .mockup-hero h5 { font-size: 13px; font-weight: 800; color: #e2e8f0; }
+        .mockup-hero p { font-size: 8px; color: #64748b; }
+        .mockup-hero .mockup-cta {
+            padding: 5px 14px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #06b6d4, #a855f7);
+            font-size: 9px;
+            font-weight: 700;
+            color: #fff;
+        }
+        /* Video player */
+        .mockup-video {
+            background: linear-gradient(135deg, #1e1b4b, #4c1d95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 200px;
+        }
+        .mockup-video .play-btn {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 17px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .mockup-video .play-btn:hover { background: rgba(255, 255, 255, 0.3); transform: scale(1.08); }
+        .mockup-video .progress {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        .mockup-video .progress span {
+            display: block;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(90deg, #06b6d4, #a855f7);
+            border-radius: 999px;
+        }
+        .mockup-video .rec-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 0, 0, 0.45);
+            color: #fca5a5;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 4px 8px;
+            border-radius: 999px;
+            text-transform: uppercase;
+        }
+        .mockup-video .rec-badge span { width: 6px; height: 6px; border-radius: 50%; background: #ef4444; animation: pulse 1.5s infinite; }
+        /* Poster */
+        .mockup-poster {
+            background: linear-gradient(135deg, #0e7490, #7e22ce);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        .mockup-poster::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.12), transparent 50%);
+        }
+        .mockup-poster h5 { font-size: 15px; font-weight: 900; color: #fff; letter-spacing: 0.06em; position: relative; z-index: 1; }
+        .mockup-poster p { font-size: 9px; color: rgba(255, 255, 255, 0.75); letter-spacing: 0.25em; text-transform: uppercase; margin-top: 4px; position: relative; z-index: 1; }
+        .mockup-poster .price-tag {
+            margin-top: 10px;
+            font-size: 11px;
+            font-weight: 800;
+            color: #0b0d12;
+            background: #fff;
+            padding: 4px 10px;
+            border-radius: 999px;
+            position: relative;
+            z-index: 1;
+        }
+        /* Spreadsheet / Dashboard */
+        .mockup-sheet {
+            background: #0c1119;
+            padding: 14px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .mockup-sheet-row { display: grid; grid-template-columns: 1.2fr 1fr 0.8fr; gap: 4px; }
+        .mockup-sheet-cell { height: 14px; background: #1e293b; border-radius: 3px; }
+        .mockup-sheet-cell.header { background: linear-gradient(90deg, #06b6d4, #a855f7); }
+        .mockup-chart {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            margin-top: auto;
+            height: 70px;
+        }
+        .mockup-chart i {
+            flex: 1;
+            background: linear-gradient(180deg, #06b6d4, #a855f7);
+            border-radius: 3px 3px 0 0;
+        }
+
+        /* ─── Outcome / Metric Badge ─── */
+        .metric-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 10;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(11, 13, 18, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(6, 182, 212, 0.4);
+            font-size: 11px;
+            font-weight: 700;
+            color: #22d3ee;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+        }
+        .metric-badge i { font-size: 10px; color: #34d399; }
+
+        /* ─── Testimonials ─── */
+        .testimonial-card {
+            background: #131620;
+            border: 1px solid #1e293b;
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-6px);
+            border-color: #06b6d4;
+            box-shadow: 0 12px 40px rgba(6, 182, 212, 0.12);
+        }
+        .testimonial-card .quote-icon {
+            font-size: 2rem;
+            color: #06b6d4;
+            opacity: 0.3;
+            margin-bottom: 1rem;
+        }
+        .stars {
+            display: inline-flex;
+            gap: 3px;
+            color: #f59e0b;
+            font-size: 0.85rem;
+        }
+        .testimonial-avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #06b6d4, #a855f7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #fff;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        /* ─── Trust Stats Band ─── */
+        .stats-band {
+            position: relative;
+            overflow: hidden;
+        }
+        .stats-band::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 120%, rgba(6, 182, 212, 0.08), transparent 60%);
+            pointer-events: none;
+        }
+
+        /* ─── Background Effects ─── */
+        .bg-grid {
+            background-image:
+                linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.08), transparent 70%);
+            pointer-events: none;
+            animation: pulseGlow 6s ease-in-out infinite alternate;
+        }
+        @keyframes pulseGlow {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.3);
+                opacity: 1;
+            }
+        }
+
+        /* ─── Floating Particles ─── */
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #06b6d4;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: floatParticle 8s infinite ease-in-out;
+        }
+        @keyframes floatParticle {
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 0.2;
+            }
+            50% {
+                transform: translateY(-40px) scale(1.5);
+                opacity: 0.6;
+            }
+        }
+
+        /* ─── Stat Counter ─── */
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #06b6d4, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ─── Timeline (11 Steps) ─── */
+        .timeline-track {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding: 1.5rem 0.5rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .timeline-track::-webkit-scrollbar {
+            height: 4px;
+        }
+        .timeline-track::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, #06b6d4, #a855f7);
+            border-radius: 10px;
+        }
+        .timeline-step {
+            flex: 0 0 220px;
+            scroll-snap-align: start;
+            background: #131620;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .timeline-step:hover {
+            border-color: #06b6d4;
+            box-shadow: 0 4px 20px rgba(6, 182, 212, 0.12);
+            transform: translateY(-4px);
+        }
+        .step-number {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #06b6d4, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .step-connector {
+            width: 2px;
+            height: 24px;
+            background: linear-gradient(180deg, #06b6d4, #a855f7);
+            margin: 0.5rem auto;
+            border-radius: 10px;
+        }
+
+        /* ─── Portfolio Filters ─── */
+        .filter-btn {
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            background: transparent;
+            color: #9ca3af;
+            border: 1px solid #1e293b;
+            cursor: pointer;
+        }
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: linear-gradient(135deg, #06b6d4, #a855f7);
+            color: #fff;
+            border-color: transparent;
+        }
+
+        /* ─── Portfolio Card ─── */
+        .portfolio-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #131620;
+            border: 1px solid #1e293b;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(6, 182, 212, 0.12);
+            border-color: #06b6d4;
+        }
+        .portfolio-card .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.85), rgba(168, 85, 247, 0.85));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .portfolio-card:hover .overlay {
+            opacity: 1;
+        }
+        .portfolio-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .portfolio-card:hover img {
+            transform: scale(1.08);
+        }
+
+        /* ─── Team Avatar ─── */
+        .team-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #06b6d4, #a855f7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 auto 1rem;
+            border: 3px solid #1e293b;
+            transition: all 0.3s ease;
+        }
+        .team-card:hover .team-avatar {
+            border-color: #06b6d4;
+            transform: scale(1.05);
+        }
+
+        /* ─── Form ─── */
+        .form-input {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: #131620;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            color: #e5e7eb;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+            outline: none;
+        }
+        .form-input:focus {
+            border-color: #06b6d4;
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+        }
+        .form-input::placeholder {
+            color: #6b7280;
+        }
+
+        /* ─── Animations ─── */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+
+        /* ─── Scroll Reveal ─── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ─── Mobile Menu ─── */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.4s ease;
+        }
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* ─── WhatsApp Float Button ─── */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 50;
+            width: 56px;
+            height: 56px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
+        }
+
+        /* ─── Responsive Tweaks ─── */
+        @media (max-width: 640px) {
+            .stat-number {
+                font-size: 2rem;
+            }
+            .timeline-step {
+                flex: 0 0 180px;
+            }
+            .hero-title {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hidden SVG defs (reusable logo gradient) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <linearGradient id="nexusGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#06b6d4"/>
+                <stop offset="1" stop-color="#a855f7"/>
+            </linearGradient>
+            <symbol id="nexusLogo" viewBox="0 0 40 40">
+                <rect width="40" height="40" rx="10" fill="url(#nexusGrad)"/>
+                <circle cx="20" cy="12.5" r="3.4" fill="#fff"/>
+                <circle cx="12.8" cy="25" r="3.4" fill="#fff" opacity="0.85"/>
+                <circle cx="27.2" cy="25" r="3.4" fill="#fff" opacity="0.85"/>
+                <path d="M20 12.5 L12.8 25 M20 12.5 L27.2 25 M12.8 25 L27.2 25" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- ════════════════════════════════════
+    NAVBAR
+════════════════════════════════════ -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0b0d12]/80 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2.5 group">
+                    <svg class="logo-svg w-9 h-9 transition-transform duration-300 group-hover:scale-105" aria-hidden="true">
+                        <use href="#nexusLogo"></use>
+                    </svg>
+                    <span class="text-xl font-extrabold tracking-tight">
+                        <span class="text-white">Nexus</span>
+                        <span class="text-gray-400 font-light">Devs</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Links -->
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-300">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#process" class="hover:text-cyan-400 transition-colors">Process</a>
+                    <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                    <a href="#team" class="hover:text-cyan-400 transition-colors">Team</a>
+                    <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                    <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
+                    target="_blank"
+                    class="ml-2 px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
+                    Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="menuBtn" class="md:hidden text-gray-300 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-[#131620] border-l border-white/5 z-50 p-6 pt-20 md:hidden">
+        <button id="closeBtn" class="absolute top-5 right-5 text-gray-400 text-2xl">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="flex flex-col gap-4 text-gray-300 font-medium">
+            <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+            <a href="#process" class="hover:text-cyan-400 transition-colors">Process</a>
+            <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+            <a href="#team" class="hover:text-cyan-400 transition-colors">Team</a>
+            <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
+            <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
+            target="_blank"
+            class="mt-2 px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm text-center">
+            Free Quote
+        </a>
+    </div>
+</div>
+<!-- Overlay -->
+<div id="overlay" class="fixed inset-0 bg-black/50 z-40 hidden md:hidden"></div>
+</nav>
+
+<!-- ════════════════════════════════════
+HERO SECTION
+════════════════════════════════════ -->
+<section id="hero" class="relative min-h-screen flex items-center justify-center bg-grid overflow-hidden pt-16">
+    <!-- Ambient Glow -->
+    <div class="hero-glow top-1/2 left-1/3"></div>
+    <div class="hero-glow top-1/3 right-1/4" style="background: radial-gradient(circle, rgba(168,85,247,0.06), transparent 70%); animation-delay: 3s;"></div>
+
+    <!-- Particles -->
+    <div class="particle top-[20%] left-[15%]" style="animation-delay: 0s;"></div>
+    <div class="particle top-[30%] right-[20%]" style="animation-delay: 1.5s;"></div>
+    <div class="particle top-[60%] left-[10%]" style="animation-delay: 3s;"></div>
+    <div class="particle top-[70%] right-[15%]" style="animation-delay: 4.5s;"></div>
+    <div class="particle top-[40%] left-[50%]" style="animation-delay: 2s;"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-6 animate-fade-in-up">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            Nexus Devs Innovations — Est. 2024
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-6 animate-fade-in-up delay-100">
+            Turn Your <span class="gradient-text">Business Ideas</span> Into
+            <span class="gradient-text">High-Converting</span>
+            Digital Products
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 animate-fade-in-up delay-200">
+            A specialized <strong class="text-white">7-member team</strong> delivering end-to-end
+            <strong class="text-cyan-300">Web Development</strong>,
+            <strong class="text-purple-300">Video Production</strong>,
+            <strong class="text-cyan-300">Graphic Design</strong>, and
+            <strong class="text-purple-300">Data Operations</strong>.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-300">
+            <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
+            target="_blank"
+            class="btn-cta">
+            <i class="fas fa-comment"></i>Get a Free Quote
+        </a>
+        <a href="#portfolio" class="btn-secondary">
+            <i class="fas fa-eye"></i>View Our Work
+        </a>
+    </div>
+
+<!-- Scroll Indicator -->
+<div class="mt-16 animate-bounce">
+    <a href="#about" class="text-gray-500 text-xl">
+        <i class="fas fa-chevron-down"></i>
+    </a>
+</div>
+</div>
+</section>
+
+<!-- ════════════════════════════════════
+ABOUT & QUICK STATS
+════════════════════════════════════ -->
+<section id="about" class="relative py-20 sm:py-28 bg-[#0b0d12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-cyan-400">About Us</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+                Who We Are
+            </h2>
+            <p class="text-gray-400 leading-relaxed text-base sm:text-lg">
+                <strong class="text-white">Nexus Devs Innovations</strong> is a compact, high-output digital team that
+                partners with startups, brands, and agencies to deliver polished digital products — on time,
+                every time. From building responsive websites to crafting scroll-stopping visuals and
+                streamlining data workflows, we handle the full spectrum with a
+                <strong class="text-cyan-300">rigorous 11-step quality process</strong>.
+            </p>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <!-- Stat 1 -->
+            <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-8 text-center reveal delay-100">
+                <div class="text-4xl font-extrabold stat-number">
+                    <span class="counter" data-target="7">0</span>
+                </div>
+                <div class="text-gray-400 font-medium mt-2">Specialists</div>
+                <p class="text-gray-500 text-sm mt-1">Covering every niche under one roof</p>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-8 text-center reveal delay-200">
+                <div class="text-4xl font-extrabold stat-number">
+                    <span class="counter" data-target="11">0</span>
+                </div>
+                <div class="text-gray-400 font-medium mt-2">Step QC Process</div>
+                <p class="text-gray-500 text-sm mt-1">Zero-compromise quality checks</p>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-8 text-center reveal delay-300">
+                <div class="text-4xl font-extrabold stat-number">
+                    <span class="counter" data-target="100">0</span><span class="stat-number">%</span>
+                </div>
+                <div class="text-gray-400 font-medium mt-2">Client Satisfaction</div>
+                <p class="text-gray-500 text-sm mt-1">Every project delivered with care</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════
+INTERACTIVE PROJECT PROCESS (11 Steps)
+════════════════════════════════════ -->
+<section id="process" class="relative py-20 sm:py-28 bg-[#0f1117]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-purple-400">Our Process</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+                11-Step Project Workflow
+            </h2>
+            <p class="text-gray-400 text-base sm:text-lg">
+                From first contact to final delivery — a transparent, battle-tested pipeline that ensures
+                <strong class="text-white">quality, consistency, and client happiness</strong>.
+            </p>
+        </div>
+
+        <!-- Timeline Track (Horizontal Scroll) -->
+        <div class="timeline-track reveal">
+            <!-- Step 1 -->
+            <div class="timeline-step">
+                <div class="step-number">01</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Lead Found</h4>
+                <p class="text-gray-500 text-xs mt-1">Identified through outreach</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="timeline-step">
+                <div class="step-number">02</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Client Contacted</h4>
+                <p class="text-gray-500 text-xs mt-1">Personalized introduction</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="timeline-step">
+                <div class="step-number">03</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Requirement Understood</h4>
+                <p class="text-gray-500 text-xs mt-1">Deep-dive discovery call</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="timeline-step">
+                <div class="step-number">04</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Quotation Sent</h4>
+                <p class="text-gray-500 text-xs mt-1">Transparent pricing &amp; scope</p>
+            </div>
+            <!-- Step 5 -->
+            <div class="timeline-step">
+                <div class="step-number">05</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">50% Advance Received</h4>
+                <p class="text-gray-500 text-xs mt-1">Project kickstarter</p>
+            </div>
+            <!-- Step 6 -->
+            <div class="timeline-step">
+                <div class="step-number">06</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Task Assigned</h4>
+                <p class="text-gray-500 text-xs mt-1">Matched to the right specialist</p>
+            </div>
+            <!-- Step 7 -->
+            <div class="timeline-step">
+                <div class="step-number">07</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Work Completed</h4>
+                <p class="text-gray-500 text-xs mt-1">Execution &amp; delivery</p>
+            </div>
+            <!-- Step 8 -->
+            <div class="timeline-step">
+                <div class="step-number">08</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Quality Check (QC)</h4>
+                <p class="text-gray-500 text-xs mt-1">11-point review checklist</p>
+            </div>
+            <!-- Step 9 -->
+            <div class="timeline-step">
+                <div class="step-number">09</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Client Revision &amp; Approval</h4>
+                <p class="text-gray-500 text-xs mt-1">Collaborative refinement</p>
+            </div>
+            <!-- Step 10 -->
+            <div class="timeline-step">
+                <div class="step-number">10</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Final Payment</h4>
+                <p class="text-gray-500 text-xs mt-1">Remaining 50% collected</p>
+            </div>
+            <!-- Step 11 -->
+            <div class="timeline-step">
+                <div class="step-number">11</div>
+                <div class="step-connector"></div>
+                <h4 class="text-white font-semibold text-sm">Delivery + Testimonial + Referral</h4>
+                <p class="text-gray-500 text-xs mt-1">Project closed &amp; celebrated</p>
+            </div>
+        </div>
+        <!-- Scroll hint -->
+        <p class="text-center text-gray-600 text-xs mt-4 reveal">
+            <i class="fas fa-arrows-alt-h mr-1"></i> Scroll horizontally to explore all 11 steps
+        </p>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════
+SERVICES GRID
+════════════════════════════════════ -->
+<section id="services" class="relative py-20 sm:py-28 bg-[#0b0d12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-cyan-400">What We Do</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+                Our Services
+            </h2>
+            <p class="text-gray-400 text-base sm:text-lg">
+                Four specialized verticals — one unified team. We cover everything digital under one roof.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Service 1: Web Dev -->
+            <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-100">
+                <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-4">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-2">Website Development</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Landing pages, web apps, maintenance &amp; hosting setup.
+                </p>
+            </div>
+
+            <!-- Service 2: Video -->
+            <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-200">
+                <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-4">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-2">Video Production &amp; Editing</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Reels, ads, shorts, promo videos, and post-production.
+                </p>
+            </div>
+
+            <!-- Service 3: Graphic Design -->
+            <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-300">
+                <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-4">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-2">Graphic Design &amp; Branding</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Product catalogues, posters, social media creatives.
+                </p>
+            </div>
+
+            <!-- Service 4: Data & Ops -->
+            <div class="glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-400">
+                <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-4">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="text-white font-bold text-lg mb-2">Data &amp; Operations</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Excel formatting, data entry, PDF conversion &amp; more.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════
+TEAM SECTION
+════════════════════════════════════ -->
+<section id="team" class="relative py-20 sm:py-28 bg-[#0f1117]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-purple-400">Our Team</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+                Meet the 7 Specialists
+            </h2>
+            <p class="text-gray-400 text-base sm:text-lg">
+                A lean, skilled crew working in sync to deliver exceptional results.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Member 1 -->
+            <div class="team-card glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-100">
+                <div class="team-avatar">KS</div>
+                <h4 class="text-white font-bold text-base">Krish Sharma</h4>
+                <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-0.5">Founder &amp; Team Lead</p>
+                <p class="text-gray-500 text-xs mt-2">Sales &amp; Strategy — Visionary behind Nexus Devs.</p>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="team-card glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-200">
+                <div class="team-avatar">AR</div>
+                <h4 class="text-white font-bold text-base">Aditya Raj</h4>
+                <p class="text-purple-400 text-xs font-semibold uppercase tracking-wider mt-0.5">Lead Generation Specialist</p>
+                <p class="text-gray-500 text-xs mt-2">Outreach &amp; Growth — Fills the pipeline with quality leads.</p>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="team-card glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-300">
+                <div class="team-avatar">L</div>
+                <h4 class="text-white font-bold text-base">Liya</h4>
+                <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-0.5">Project Manager</p>
+                <p class="text-gray-500 text-xs mt-2">Task Allocation &amp; QC — Keeps everything on track.</p>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="team-card glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-400">
+                <div class="team-avatar">SV</div>
+                <h4 class="text-white font-bold text-base">Shruti Verma</h4>
+                <p class="text-purple-400 text-xs font-semibold uppercase tracking-wider mt-0.5">Accounts &amp; Records Specialist</p>
+                <p class="text-gray-500 text-xs mt-2">Invoicing &amp; Excel — Financial accuracy always.</p>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="team-card glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-100">
+                <div class="team-avatar">GS</div>
+                <h4 class="text-white font-bold text-base">Gaurav</h4>
+                <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-0.5">Video Editor & photo editor</p>
+                <p class="text-gray-500 text-xs mt-2">Shorts, Reels, Ads — Visual storytelling expert.</p>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="team-card glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-200">
+                <div class="team-avatar">NS</div>
+                <h4 class="text-white font-bold text-base">Neha Singh</h4>
+                <p class="text-purple-400 text-xs font-semibold uppercase tracking-wider mt-0.5">Website Developer</p>
+                <p class="text-gray-500 text-xs mt-2">Fullstack &amp; Frontend — Builds pixel-perfect sites.</p>
+            </div>
+
+            <!-- Member 7 -->
+            <div class="team-card glow-card bg-[#131620] border border-[#1e293b] rounded-2xl p-6 text-center reveal delay-300">
+                <div class="team-avatar">VK</div>
+                <h4 class="text-white font-bold text-base">Vikas Kumar</h4>
+                <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-0.5">Graphic Designer &amp; Data Specialist</p>
+                <p class="text-gray-500 text-xs mt-2">Catalogues, Formatting — Design meets data precision.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════
+PORTFOLIO SHOWCASE
+════════════════════════════════════ -->
+<section id="portfolio" class="relative py-20 sm:py-28 bg-[#0b0d12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-cyan-400">Our Work</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+                Portfolio Showcase
+            </h2>
+            <p class="text-gray-400 text-base sm:text-lg">
+                A glimpse of projects across our core verticals.
+            </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap justify-center gap-3 mb-10 reveal" id="filterBtns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="websites">Websites</button>
+            <button class="filter-btn" data-filter="videos">Videos</button>
+            <button class="filter-btn" data-filter="graphics">Graphics</button>
+            <button class="filter-btn" data-filter="data">Data</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolioGrid">
+            <!-- Project 1 — Websites -->
+            <div class="portfolio-card" data-category="websites">
+                <div class="mockup mockup-browser">
+                    <div class="mockup-browser-bar">
+                        <span class="mockup-dot red"></span>
+                        <span class="mockup-dot yellow"></span>
+                        <span class="mockup-dot green"></span>
+                        <span class="mockup-url"></span>
+                    </div>
+                    <div class="mockup-nav">
+                        <span class="mockup-logo"></span>
+                        <span class="mockup-nav-link"></span>
+                        <span class="mockup-nav-link"></span>
+                        <span class="mockup-nav-link"></span>
+                        <span class="mockup-nav-link cta"></span>
+                    </div>
+                    <div class="mockup-hero">
+                        <h5>CloudDash — SaaS Landing</h5>
+                        <p>Convert more with a focused, high-converting page.</p>
+                        <span class="mockup-cta">Get Started</span>
+                    </div>
+                </div>
+                <span class="metric-badge"><i class="fas fa-arrow-up"></i> +212% Conversions</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">SaaS Landing Page</h4>
+                    <p class="text-gray-500 text-xs mt-1">Website</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — SaaS Landing Page')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 2 — Videos -->
+            <div class="portfolio-card" data-category="videos">
+                <div class="mockup mockup-video">
+                    <span class="rec-badge"><span></span> REC</span>
+                    <span class="play-btn"><i class="fas fa-play"></i></span>
+                    <div class="progress"><span></span></div>
+                </div>
+                <span class="metric-badge"><i class="fas fa-fire"></i> 1.2M Views</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">Product Reel — 30s</h4>
+                    <p class="text-gray-500 text-xs mt-1">Video</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Product Reel')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 3 — Graphics -->
+            <div class="portfolio-card" data-category="graphics">
+                <div class="mockup mockup-poster">
+                    <h5>SUMMER<br/>SALE</h5>
+                    <p>Brand Campaign</p>
+                    <span class="price-tag">Up to 40% Off</span>
+                </div>
+                <span class="metric-badge"><i class="fas fa-bolt"></i> 3.4x Engagement</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">Brand Poster Series</h4>
+                    <p class="text-gray-500 text-xs mt-1">Graphic</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Brand Poster')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 4 — Data -->
+            <div class="portfolio-card" data-category="data">
+                <div class="mockup mockup-sheet">
+                    <div class="mockup-sheet-row">
+                        <span class="mockup-sheet-cell header"></span>
+                        <span class="mockup-sheet-cell header"></span>
+                        <span class="mockup-sheet-cell header"></span>
+                    </div>
+                    <div class="mockup-sheet-row">
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                    </div>
+                    <div class="mockup-sheet-row">
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                    </div>
+                    <div class="mockup-chart">
+                        <i style="height:35%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:70%"></i><i style="height:60%"></i><i style="height:85%"></i><i style="height:75%"></i><i style="height:95%"></i>
+                    </div>
+                </div>
+                <span class="metric-badge"><i class="fas fa-clock"></i> 60% Time Saved</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">Sales Analytics Dashboard</h4>
+                    <p class="text-gray-500 text-xs mt-1">Data</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Excel Dashboard')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 5 — Websites -->
+            <div class="portfolio-card" data-category="websites">
+                <div class="mockup mockup-browser">
+                    <div class="mockup-browser-bar">
+                        <span class="mockup-dot red"></span>
+                        <span class="mockup-dot yellow"></span>
+                        <span class="mockup-dot green"></span>
+                        <span class="mockup-url"></span>
+                    </div>
+                    <div class="mockup-nav">
+                        <span class="mockup-logo"></span>
+                        <span class="mockup-nav-link"></span>
+                        <span class="mockup-nav-link"></span>
+                        <span class="mockup-nav-link cta"></span>
+                    </div>
+                    <div class="mockup-hero">
+                        <h5>ShopVerse — E-Commerce</h5>
+                        <p>A storefront built to sell — fast, secure, beautiful.</p>
+                        <span class="mockup-cta">Shop Now</span>
+                    </div>
+                </div>
+                <span class="metric-badge"><i class="fas fa-cart-plus"></i> +187% Sales</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">E-Commerce Storefront</h4>
+                    <p class="text-gray-500 text-xs mt-1">Website</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — E-Commerce')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 6 — Videos -->
+            <div class="portfolio-card" data-category="videos">
+                <div class="mockup mockup-video">
+                    <span class="rec-badge"><span></span> AD</span>
+                    <span class="play-btn"><i class="fas fa-play"></i></span>
+                    <div class="progress"><span></span></div>
+                </div>
+                <span class="metric-badge"><i class="fas fa-chart-line"></i> 38% CTR</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">YouTube Ad — 15s</h4>
+                    <p class="text-gray-500 text-xs mt-1">Video</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — YouTube Ad')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 7 — Graphics -->
+            <div class="portfolio-card" data-category="graphics">
+                <div class="mockup mockup-poster">
+                    <h5>NEW<br/>LAUNCH</h5>
+                    <p>Product Catalogue</p>
+                    <span class="price-tag">View Collection</span>
+                </div>
+                <span class="metric-badge"><i class="fas fa-eye"></i> 5x Reach</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">Product Catalogue</h4>
+                    <p class="text-gray-500 text-xs mt-1">Graphic</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — Catalogue')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project 8 — Data -->
+            <div class="portfolio-card" data-category="data">
+                <div class="mockup mockup-sheet">
+                    <div class="mockup-sheet-row">
+                        <span class="mockup-sheet-cell header"></span>
+                        <span class="mockup-sheet-cell header"></span>
+                        <span class="mockup-sheet-cell header"></span>
+                    </div>
+                    <div class="mockup-sheet-row">
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                    </div>
+                    <div class="mockup-sheet-row">
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                        <span class="mockup-sheet-cell"></span>
+                    </div>
+                    <div class="mockup-chart">
+                        <i style="height:50%"></i><i style="height:65%"></i><i style="height:40%"></i><i style="height:80%"></i><i style="height:70%"></i><i style="height:90%"></i>
+                    </div>
+                </div>
+                <span class="metric-badge"><i class="fas fa-check-circle"></i> 0 Errors</span>
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">Automated PDF Reports</h4>
+                    <p class="text-gray-500 text-xs mt-1">Data</p>
+                </div>
+                <a href="#" class="overlay" onclick="event.preventDefault(); alert('🔗 Live Preview — PDF Reports')">
+                    <span class="px-5 py-2.5 rounded-full bg-white text-gray-900 font-semibold text-sm shadow-lg hover:scale-105 transition-transform">
+                        <i class="fas fa-external-link-alt mr-1"></i> Live Preview
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════
+CLIENT TESTIMONIALS
+════════════════════════════════════ -->
+<section id="testimonials" class="relative py-20 sm:py-28 bg-[#0f1117]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <span class="text-xs font-semibold tracking-[0.2em] uppercase text-cyan-400">Testimonials</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+                What Our Clients Say
+            </h2>
+            <p class="text-gray-400 text-base sm:text-lg">
+                Real results, real reviews — from founders and teams we've partnered with.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card reveal delay-100">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="stars mb-4" aria-label="5 out of 5 stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-300 text-sm leading-relaxed flex-1">
+                    "Nexus Devs rebuilt our landing page and conversions jumped within two weeks.
+                    The 11-step process kept us informed at every stage — zero guesswork, pure professionalism."
+                </p>
+                <div class="flex items-center gap-3 mt-6">
+                    <div class="testimonial-avatar">RM</div>
+                    <div>
+                        <div class="text-white font-semibold text-sm">Rahul Mehta</div>
+                        <div class="text-gray-500 text-xs">Founder, SaaS Startup</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card reveal delay-200">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="stars mb-4" aria-label="5 out of 5 stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-300 text-sm leading-relaxed flex-1">
+                    "Their video team delivered a product reel that got over a million views.
+                    They understood our brand instantly and turned a tight deadline into our best campaign yet."
+                </p>
+                <div class="flex items-center gap-3 mt-6">
+                    <div class="testimonial-avatar">PS</div>
+                    <div>
+                        <div class="text-white font-semibold text-sm">Priya Sharma</div>
+                        <div class="text-gray-500 text-xs">Marketing Head, D2C Brand</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card reveal delay-300">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="stars mb-4" aria-label="5 out of 5 stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-300 text-sm leading-relaxed flex-1">
+                    "From data cleanup to automated reports, they saved us 60% of our manual work.
+                    A rare team that blends design taste with operational precision."
+                </p>
+                <div class="flex items-center gap-3 mt-6">
+                    <div class="testimonial-avatar">AK</div>
+                    <div>
+                        <div class="text-white font-semibold text-sm">Amit Kumar</div>
+                        <div class="text-gray-500 text-xs">COO, Logistics Firm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════
+TRUST STATS COUNTER
+════════════════════════════════════ -->
+<section id="stats" class="stats-band relative py-20 sm:py-24 bg-[#0b0d12] border-y border-white/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
+            <!-- Stat: Projects Delivered -->
+            <div class="reveal delay-100">
+                <div class="stat-number">
+                    <span class="counter" data-target="50" data-suffix="+">0</span>
+                </div>
+                <div class="text-gray-300 font-semibold mt-2 text-sm uppercase tracking-wider">Projects Delivered</div>
+            </div>
+
+            <!-- Stat: Industries Served -->
+            <div class="reveal delay-200">
+                <div class="stat-number">
+                    <span class="counter" data-target="15" data-suffix="+">0</span>
+                </div>
+                <div class="text-gray-300 font-semibold mt-2 text-sm uppercase tracking-wider">Industries Served</div>
+            </div>
+
+            <!-- Stat: Client Satisfaction -->
+            <div class="reveal delay-300">
+                <div class="stat-number">
+                    <span class="counter" data-target="99" data-suffix="%">0</span>
+                </div>
+                <div class="text-gray-300 font-semibold mt-2 text-sm uppercase tracking-wider">Client Satisfaction</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════════════════════════════
+CONTACT & LEAD FORM
+════════════════════════════════════ -->
+<section id="contact" class="relative py-20 sm:py-28 bg-[#0f1117]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Left: Info -->
+            <div class="reveal">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-cyan-400">Get in Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+                    Let's Build Something Great Together
+                </h2>
+                <p class="text-gray-400 text-base sm:text-lg leading-relaxed mb-6">
+                    Have a project in mind? Fill out the form or reach out directly on WhatsApp.
+                    We typically respond within <strong class="text-white">2 hours</strong>.
+                </p>
+
+                <!-- WhatsApp CTA -->
+                <a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
+                target="_blank"
+                class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-[#25d366]/10 border border-[#25d366]/30 text-[#25d366] font-semibold hover:bg-[#25d366]/20 transition-all mb-8">
+                <i class="fab fa-whatsapp text-xl"></i>
+                Chat directly on WhatsApp
+            </a>
+
+            <!-- Quick Info -->
+            <div class="space-y-4 text-sm text-gray-400">
+                <div class="flex items-center gap-3">
+                    <span class="w-9 h-9 rounded-lg bg-[#131620] border border-[#1e293b] flex items-center justify-center text-cyan-400">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>hello@nexusdevs.in</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-9 h-9 rounded-lg bg-[#131620] border border-[#1e293b] flex items-center justify-center text-purple-400">
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>+91 99999 99999</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-9 h-9 rounded-lg bg-[#131620] border border-[#1e293b] flex items-center justify-center text-cyan-400">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>Remote — India / Global</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="bg-[#131620] border border-[#1e293b] rounded-2xl p-6 sm:p-8 reveal delay-200">
+            <form id="leadForm" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-1.5">Your Name *</label>
+                        <input type="text" name="name" required placeholder="e.g. Rahul Mehta"
+                        class="form-input" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-300 mb-1.5">Phone Number *</label>
+                        <input type="tel" name="phone" required placeholder="+91 98765 43210"
+                        class="form-input" />
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-1.5">Service Required *</label>
+                    <select name="service" required class="form-input">
+                        <option value="" disabled selected>— Select a service —</option>
+                        <option value="web">Website Development</option>
+                        <option value="video">Video Production &amp; Editing</option>
+                        <option value="graphics">Graphic Design &amp; Branding</option>
+                        <option value="data">Data &amp; Operations</option>
+                        <option value="other">Other / Multiple</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-1.5">Estimated Budget</label>
+                    <select name="budget" class="form-input">
+                        <option value="" disabled selected>— Select a budget range —</option>
+                        <option value="Below ₹10,000">Below ₹10,000</option>
+                        <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+                        <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                        <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                        <option value="₹1,00,000+">₹1,00,000+</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-1.5">Message / Project Brief</label>
+                    <textarea name="message" rows="4" placeholder="Tell us about your project, timeline, and budget..."
+                    class="form-input resize-none"></textarea>
+                </div>
+
+                <button type="submit"
+                class="w-full py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold text-base hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
+                <i class="fas fa-paper-plane mr-2"></i> Send Message
+            </button>
+
+            <button type="button" id="discoveryBtn"
+            class="btn-cta w-full py-3.5 !rounded-full text-base">
+            <i class="fas fa-phone-alt mr-2"></i> Book a 15-min Discovery Call
+        </button>
+    </form>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- ════════════════════════════════════
+FOOTER
+════════════════════════════════════ -->
+<footer class="border-t border-white/5 bg-[#0b0d12] py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2.5 group">
+                <svg class="logo-svg w-8 h-8 transition-transform duration-300 group-hover:scale-105" aria-hidden="true">
+                    <use href="#nexusLogo"></use>
+                </svg>
+                <span class="text-lg font-extrabold tracking-tight">
+                    <span class="text-white">Nexus</span>
+                    <span class="text-gray-400 font-light">Devs</span>
+                </span>
+            </a>
+
+            <!-- Social Links -->
+            <div class="flex items-center gap-4 text-gray-500">
+                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-lg" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/919999999999" target="_blank" class="hover:text-[#25d366] transition-colors text-lg" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-gray-600 text-sm">
+                &copy; 2026  <a href="#" class="hover:text-cyan-400 transition-colors">Nexus Devs Innovations</a>. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- ════════════════════════════════════
+WHATSAPP FLOATING BUTTON
+════════════════════════════════════ -->
+<a href="https://wa.me/919999999999?text=Hi%20Nexus%20Devs!%20I'd%20like%20a%20free%20quote."
+target="_blank"
+class="whatsapp-float"
+title="Chat on WhatsApp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ════════════════════════════════════
+JAVASCRIPT
+════════════════════════════════════ -->
+<script>
+    (function() {
+        'use strict';
+
+        // ─── Mobile Menu ───
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            overlay.classList.remove('hidden');
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            overlay.classList.add('hidden');
+        }
+
+        if (menuBtn) menuBtn.addEventListener('click', openMenu);
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+        if (overlay) overlay.addEventListener('click', closeMenu);
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // ─── Animated Counters ───
+        const counters = document.querySelectorAll('.counter');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.dataset.counted) {
+                    entry.target.dataset.counted = 'true';
+                    const target = parseInt(entry.target.dataset.target, 10);
+                    animateCounter(entry.target, target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(c => counterObserver.observe(c));
+
+        function animateCounter(el, target) {
+            const suffix = el.dataset.suffix || '';
+            let current = 0;
+            const increment = Math.ceil(target / 50);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = current + suffix;
+            }, 30);
+        }
+
+        // ─── Scroll Reveal (Intersection Observer) ───
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // ─── Portfolio Filtering ───
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                portfolioItems.forEach(item => {
+                    const category = item.dataset.category;
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                        item.style.opacity = '0';
+                        setTimeout(() => { item.style.opacity = '1'; }, 50);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ─── Contact Form ───
+        const leadForm = document.getElementById('leadForm');
+        if (leadForm) {
+            leadForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const formData = new FormData(this);
+                const name = formData.get('name')?.toString().trim() || 'Customer';
+                const phone = formData.get('phone')?.toString().trim() || '';
+                const service = formData.get('service')?.toString().trim() || '';
+                const budget = formData.get('budget')?.toString().trim() || '';
+                const message = formData.get('message')?.toString().trim() || '';
+
+                // Build WhatsApp message
+                let whatsappMsg =
+                    `Hi Nexus Devs!%0A%0A` +
+                    `*Name:* ${encodeURIComponent(name)}%0A` +
+                    `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                    `*Service:* ${encodeURIComponent(service)}%0A`;
+                if (budget) {
+                    whatsappMsg += `*Budget:* ${encodeURIComponent(budget)}%0A`;
+                }
+                whatsappMsg += `*Message:* ${encodeURIComponent(message)}`;
+
+                const waUrl = `https://wa.me/919999999999?text=${whatsappMsg}`;
+                window.open(waUrl, '_blank');
+
+                // Reset form
+                this.reset();
+                alert('✅ Redirecting to WhatsApp with your details!');
+            });
+        }
+
+        // ─── Book a 15-min Discovery Call ───
+        const discoveryBtn = document.getElementById('discoveryBtn');
+        if (discoveryBtn) {
+            discoveryBtn.addEventListener('click', function() {
+                const formData = new FormData(leadForm);
+                const name = formData.get('name')?.toString().trim() || '';
+                const phone = formData.get('phone')?.toString().trim() || '';
+                const service = formData.get('service')?.toString().trim() || '';
+                const budget = formData.get('budget')?.toString().trim() || '';
+
+                // Build a call-focused WhatsApp message
+                let callMsg =
+                    `Hi Nexus Devs!%0A%0A` +
+                    `I'd like to *book a 15-minute discovery call*.%0A%0A` +
+                    `*Name:* ${encodeURIComponent(name)}%0A` +
+                    `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                    `*Service:* ${encodeURIComponent(service)}%0A`;
+                if (budget) {
+                    callMsg += `*Budget:* ${encodeURIComponent(budget)}%0A`;
+                }
+
+                const waUrl = `https://wa.me/919999999999?text=${callMsg}`;
+                window.open(waUrl, '_blank');
+
+                alert('📞 Opening WhatsApp to book your 15-min discovery call!');
+            });
+        }
+
+        // ─── Smooth Scroll for Nav Links ───
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+    })();
+</script>
+
+</body>
+</html>
+
