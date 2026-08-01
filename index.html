@@ -718,6 +718,42 @@
             box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
         }
 
+        /* ─── Ad Zone (Adsterra) ─── */
+        .ad-zone {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 1.5rem;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .ad-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .ad-unit > div,
+        .ad-unit iframe,
+        .ad-unit ins,
+        .ad-unit script {
+            max-width: 100%;
+        }
+        .ad-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #4b5563;
+        }
+
         /* ─── Responsive Tweaks ─── */
         @media (max-width: 640px) {
             .stat-number {
@@ -728,6 +764,10 @@
             }
             .hero-title {
                 font-size: 2rem !important;
+            }
+            .ad-zone {
+                gap: 1rem;
+                padding: 1.25rem 0;
             }
         }
     </style>
@@ -1652,6 +1692,46 @@ FOOTER
 ════════════════════════════════════ -->
 <footer class="border-t border-white/5 bg-[#0b0d12] py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- ─── Ad Zone (Adsterra) ─── -->
+        <div class="ad-zone">
+            <!-- Ad Unit 1: 728×90 Leaderboard -->
+            <div class="ad-unit">
+                <span class="ad-label">Advertisement</span>
+                <script>
+                    atOptions = {
+                        'key' : 'ea8fcb2093b56ae69ee31d4435a1761a',
+                        'format' : 'iframe',
+                        'height' : 90,
+                        'width' : 728,
+                        'params' : {}
+                    };
+                </script>
+                <script src="https://www.highperformanceformat.com/ea8fcb2093b56ae69ee31d4435a1761a/invoke.js"></script>
+            </div>
+
+            <!-- Ad Unit 2: 300×250 Medium Rectangle -->
+            <div class="ad-unit">
+                <span class="ad-label">Advertisement</span>
+                <script>
+                    atOptions = {
+                        'key' : '0f7342320d803582eef5bd85767b24de',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                </script>
+                <script src="https://www.highperformanceformat.com/0f7342320d803582eef5bd85767b24de/invoke.js"></script>
+            </div>
+
+            <!-- Ad Unit 3: Effective CPM Network -->
+            <div class="ad-unit">
+                <span class="ad-label">Advertisement</span>
+                <script async="async" data-cfasync="false" src="https://pl30627442.effectivecpmnetwork.com/9f44b5e3047aae3222cad73aa7e4864b/invoke.js"></script>
+                <div id="container-9f44b5e3047aae3222cad73aa7e4864b"></div>
+            </div>
+        </div>
+
         <div class="flex flex-col md:flex-row items-center justify-between gap-6">
             <!-- Logo -->
             <a href="#" class="flex items-center gap-2.5 group">

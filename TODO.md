@@ -14,3 +14,12 @@
 - [x] 11. Update JS: counter suffix support (`+`, `%`) + include budget in WhatsApp form submission
 - [x] 12. Final review & verify in browser
 
+---
+
+# Adsterra Ad Integration
+
+## Steps
+- [x] 13. Add responsive ad-zone CSS (`.ad-zone`, `.ad-unit`, `.ad-label`) to the existing `<style>` block
+- [x] 14. Insert Adsterra ad zone (728×90 leaderboard + 300×250 rectangle + Effective CPM ad) into the FOOTER, before the logo/social/copyright row
+- [x] 15. Verify in browser that ads render cleanly and layout stays responsive
+
